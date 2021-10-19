@@ -2,7 +2,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia3VobDAwMzMiLCJhIjoiY2t1dHhiNXo3NXRsZjJ2bnppM
 
 var map;
 var markers = [];
-const statusDisplay = document.getElementById('status');
 
 // load map
 function init(){
