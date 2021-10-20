@@ -54,6 +54,11 @@ function addMarker(bus){
   markers.push(marker);
 }
 
+function setMarkerColor(marker, color) {
+    var $elem = jQuery(marker.getElement());
+    $elem.find('svg g[fill="' + marker._color + '"]').attr('fill', color);
+    marker._color = color;
+}
 
 function getIcon(bus){
 	// select icon based on bus direction
