@@ -73,4 +73,12 @@ function getMarker(id){
 	return marker;
 }
 
+function setMarkerColor(marker,color) {
+	let markerElement = marker.getElement();
+	markerElement
+        .querySelectorAll('svg g[fill="' + marker._color + '"]')[0]
+        .setAttribute("fill", color);      
+	marker._color = color;
+}
+
 window.onload = init;
